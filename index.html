@@ -38,11 +38,12 @@ footer.site { margin-top:48px; color:var(--muted); font-size:13px; border-top:1p
   <h1>2026年11月19日</h1>
   <div class="sub">星期四 · Top 10 新兴 AI 应用 · 12 维度结构化分析</div>
 </header>
-<nav class="archive"><h2>往期归档</h2><ul><li><a href="./2026-11-18.html">2026年11月18日</a></li>
+<nav class="archive"><h2>往期归档</h2><ul><li><a href="./2026-11-19.html">2026年11月19日</a>　👈 今日</li>
+<li><a href="./2026-11-18.html">2026年11月18日</a></li>
 <li><a href="./2026-11-17.html">2026年11月17日</a></li></ul></nav>
 <article><h1>GitHub AI 应用日报 · 2026-11-19</h1>
 <blockquote>
-<p>候选 <strong>356</strong> → 精选 <strong>3</strong>（去重跳过 30） ｜ 扫描窗口：近 30 天新建 + 近 90 天上升期 ｜ 分析引擎：glm-5.3</p>
+<p>候选 <strong>354</strong> → 精选 <strong>3</strong>（去重跳过 33） ｜ 扫描窗口：近 30 天新建 + 近 90 天上升期 ｜ 分析引擎：glm-5.3</p>
 </blockquote>
 <h2>今日一览</h2>
 <table>
@@ -58,65 +59,63 @@ footer.site { margin-top:48px; color:var(--muted); font-size:13px; border-top:1p
 </thead>
 <tbody><tr>
 <td>🥇</td>
-<td><a href="https://github.com/vercel-labs/ui">vercel-labs/ui</a></td>
-<td>6.0k</td>
-<td>+252.6</td>
-<td>TypeScript</td>
-<td>给 Agent 的无头 UI 行为库：封装焦点、键盘导航、ARIA、拖拽等交互行</td>
+<td><a href="https://github.com/QingYunA/answer-me-with-html">QingYunA/answer-me-with-html</a></td>
+<td>6.5k</td>
+<td>+136.5</td>
+<td>JavaScript</td>
+<td>给 Claude Code 等 Agent 用户：复杂问题输出带 SVG 图表的</td>
 </tr>
 <tr>
 <td>🥈</td>
-<td><a href="https://github.com/onehumanbeing/esp32-iphone-agent">onehumanbeing/esp32-iphone-agent</a></td>
-<td>5.1k</td>
-<td>+131.9</td>
-<td>Swift</td>
-<td>非开发者让AI操控真iPhone：$7 ESP32以AirPlay取屏、HID点</td>
+<td><a href="https://github.com/N1nEmAn/sapper-v2">N1nEmAn/sapper-v2</a></td>
+<td>2.5k</td>
+<td>+125.1</td>
+<td>Python</td>
+<td>The first fruit of the Nüwa tree — an au</td>
 </tr>
 <tr>
 <td>🥉</td>
-<td><a href="https://github.com/Oldcircle/geo-sleuth">Oldcircle/geo-sleuth</a></td>
-<td>7.3k</td>
-<td>+117.1</td>
-<td>Python</td>
-<td>An agent skill that finds where a photo</td>
+<td><a href="https://github.com/yjid/kensaku">yjid/kensaku</a></td>
+<td>1.9k</td>
+<td>+72.6</td>
+<td>Rust</td>
+<td>Search inside documents, code, and even</td>
 </tr>
 </tbody></table>
 <h2>详细分析</h2>
-<h3>🥇 vercel-labs/ui</h3>
+<h3>🥇 QingYunA/answer-me-with-html</h3>
 <ul>
-<li>链接：<a href="https://github.com/vercel-labs/ui">https://github.com/vercel-labs/ui</a></li>
-<li>数据：⭐ 5967 ｜ 🍴 203 ｜ Issues 53 ｜ 24 天龄 ｜ 日均 +252.6 ｜ License Apache-2.0</li>
-<li>主题：accessibility, agent, agents, ai, aria, behaviors, component, component-library, headless, mcp, react, solid, svelte, vue, web-components, webmcp</li>
+<li>链接：<a href="https://github.com/QingYunA/answer-me-with-html">https://github.com/QingYunA/answer-me-with-html</a></li>
+<li>数据：⭐ 6548 ｜ 🍴 444 ｜ Issues 11 ｜ 48 天龄 ｜ 日均 +136.5 ｜ License MIT</li>
+<li>主题：agent-skill, ai-agent, claude-code, claude-code-skill, claude-skill, claude-skills, cli, diagram, dsh-plugin, explainer, html, llm, ste100</li>
 </ul>
-<p><strong>定位</strong>：给 Agent 的无头 UI 行为库：封装焦点、键盘导航、ARIA、拖拽等交互行为原语，一套 A</p>
-<p><strong>点评</strong>：LLM 生成前端时，焦点管理、键盘导航、ARIA 等交互逻辑最易出错，界面好看却不可用。它把这类逻辑封装为可组合的行为原语，由 Agent 经 skill 消费而非人类读文档。亮点：一套行为 API 统一适配 React/Vue/Svelte/Solid/Web Components 五框架；24 天 5967 星验证需求真实。相比 Radix 等无头库，消</p>
-<p><strong>上手</strong>：npm install @ui-sdk/react @ui-sdk/core；npx skills@latest add verce</p>
-<p><strong>借鉴与注意</strong>：开发者工具的消费主体正从人转向 Agent，&#39;npm 包+skill&#39;成为新分发渠道，一人公司可低成本复刻此模式做垂直行为包（表格、编辑器、富交互组件）。变现可走企业版或托管服务。风险：Vercel 等平台方正主导标准，正面竞争无胜算，且项</p>
+<p><strong>定位</strong>：给 Claude Code 等 Agent 用户：复杂问题输出带 SVG 图表的一页 HTML，</p>
+<p><strong>点评</strong>：痛点真实：模型直接写 HTML 时 47% token 耗在 SVG 坐标与 CSS，正文仅 21%。它改为模型只交 Markdown 草稿，内置 CLI 约 50ms 渲染成页：输出 token 4893→612（省 8 倍），耗时 31s→12s，讲解视频场景省 18 倍。与 Archify 单图、GenUI 聊天内嵌组件不同，它输出完整一页，经 ver</p>
+<p><strong>上手</strong>：需 Node.js 20+；npx skills add QingYunA/answer-me-with-html；Claude C</p>
+<p><strong>借鉴与注意</strong>：做 Agent 技能而非独立产品，借技能生态分发，48 天 6548 星；变现靠赞助位（Zapply），适合引流。可复刻&#39;模型写 Markdown、CLI 写外壳&#39;分工，平移到幻灯片、报告等格式。风险：护城河薄，模型写 HTML 变强或平台</p>
 <hr>
-<h3>🥈 onehumanbeing/esp32-iphone-agent</h3>
+<h3>🥈 N1nEmAn/sapper-v2</h3>
 <ul>
-<li>链接：<a href="https://github.com/onehumanbeing/esp32-iphone-agent">https://github.com/onehumanbeing/esp32-iphone-agent</a></li>
-<li>数据：⭐ 5087 ｜ 🍴 698 ｜ Issues 25 ｜ 39 天龄 ｜ 日均 +131.9 ｜ License MIT</li>
-<li>主题：ai-agent, airplay, claude-code, computer-use, dsh-plugin, esp32, esp32-s3, ios, ios-automation, iphone, llm, manina-ai, mcp, mcp-server, mobile-agent, phone-agent, screen-mirroring, seeed-xiao, usb-hid, xiao-esp32s3</li>
+<li>链接：<a href="https://github.com/N1nEmAn/sapper-v2">https://github.com/N1nEmAn/sapper-v2</a></li>
+<li>数据：⭐ 2473 ｜ 🍴 1209 ｜ Issues 3 ｜ 20 天龄 ｜ 日均 +125.1 ｜ License MIT</li>
+<li>主题：agentic-workflows, ai-agents, ai-security, autonomous-agents, claude-code, ctf, cybersecurity, fact-graph, llm, multi-agent, pentest, swarm-intelligence</li>
 </ul>
-<p><strong>定位</strong>：非开发者让AI操控真iPhone：$7 ESP32以AirPlay取屏、HID点按，免Mac免越</p>
-<p><strong>点评</strong>：iPhone代理过去要Mac+Xcode全程连线，普通人被挡在门外。它用$7 ESP32-S3顶替电脑：AirPlay收屏直传H.264不解码，USB HID借AssistiveTouch点按，手机App接任意OpenAI兼容视觉模型。硬核是指针抖动自校准、逐步回放导出trace，免Mac免越狱可操作任何App。computer-use浪潮下39天揽5000</p>
-<p><strong>上手</strong>：购Seeed XIAO ESP32S3(约$7)，Chrome访问manina.ai/install网页刷固件，TestFlight</p>
-<p><strong>借鉴与注意</strong>：把「免Mac免越狱」门槛做成$7硬件+App，开源引流、NOTICE锁署名，变现走自带API key、App Store与即插整机；AirPlay+USB HID打法公开可复刻，护城河在打磨与分发。最大风险是苹果审核与政策。</p>
+<p><strong>定位</strong>：The first fruit of the Nüwa tree — an autonomous</p>
+<p><strong>点评</strong>：2473 stars / 20 天龄，日均 +125.1；命中热门方向：ai-agents、llm；有明确产品形态；README 亮点：docker/commander/SKILL.md (the 426-line doctrine) → your scenario&#39;s strategy；watchdog budget/deadline </p>
+<p><strong>借鉴与注意</strong>：产品化思路可复刻；注意：新项目成熟度有限，引入前请自行评估</p>
 <hr>
-<h3>🥉 Oldcircle/geo-sleuth</h3>
+<h3>🥉 yjid/kensaku</h3>
 <ul>
-<li>链接：<a href="https://github.com/Oldcircle/geo-sleuth">https://github.com/Oldcircle/geo-sleuth</a></li>
-<li>数据：⭐ 7260 ｜ 🍴 904 ｜ Issues 28 ｜ 62 天龄 ｜ 日均 +117.1 ｜ License MIT</li>
-<li>主题：agent-skills, ai-agents, claude-code, codex, computer-vision, cursor, gemini-cli, geoguessr, geoint, geolocation, github-copilot, image-geolocation, opencode, openstreetmap, osint, photo-geolocation, reverse-image-search, satellite-imagery</li>
+<li>链接：<a href="https://github.com/yjid/kensaku">https://github.com/yjid/kensaku</a></li>
+<li>数据：⭐ 1852 ｜ 🍴 120 ｜ Issues 9 ｜ 26 天龄 ｜ 日均 +72.6 ｜ License MIT</li>
+<li>主题：ai-agents, desktop, desktop-search, file-search, full-text-search, launcher, local-first, mcp, ocr, open-source, privacy, rust, search, semantic-search, tauri, windows</li>
 </ul>
-<p><strong>定位</strong>：An agent skill that finds where a photo was take</p>
-<p><strong>点评</strong>：7260 stars / 62 天龄，日均 +117.1；命中热门方向：ai-agents；有明确产品形态；技术栈：Python/Anthropic/Gemini；新项目成熟度有限，引入前请自行评估</p>
-<p><strong>上手</strong>：README 提供 Quick Start / 安装指引</p>
+<p><strong>定位</strong>：Search inside documents, code, and even screensh</p>
+<p><strong>点评</strong>：1852 stars / 26 天龄，日均 +72.6；命中热门方向：ai-agents、mcp；有明确产品形态；README 亮点：The log line from the failed deploy, somewhere in a folder of logs.；Results update as you type. There i</p>
 <p><strong>借鉴与注意</strong>：产品化思路可复刻；注意：新项目成熟度有限，引入前请自行评估</p>
 <hr>
 <blockquote>
-<p>由 <a href="https://github.com/">iGithubNews</a> 自动生成 ｜ 数据来源 GitHub Search API ｜ 生成时间 2026/11/19 16:41:03</p>
+<p>由 <a href="https://github.com/">iGithubNews</a> 自动生成 ｜ 数据来源 GitHub Search API ｜ 生成时间 2026/11/19 17:39:38</p>
 </blockquote>
 
 </article>
